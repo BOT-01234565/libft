@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amelbouz <amelbouz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/18 08:54:17 by amelbouz          #+#    #+#             */
-/*   Updated: 2026/10/18 10:12:52 by amelbouz         ###   ########.fr       */
+/*   Created: 2026/10/25 16:37:39 by amelbouz          #+#    #+#             */
+/*   Updated: 2026/10/25 16:43:51 by amelbouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
 #include "libft.h"
 
-int	main()
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	char const *s = "ababaaaMy name is Simonbbaaabba";
-	char const *set = "ab";
-	printf("%s\n",(char *)ft_strtrim(s,set));
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

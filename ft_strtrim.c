@@ -6,7 +6,7 @@
 /*   By: amelbouz <amelbouz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 10:28:54 by amelbouz          #+#    #+#             */
-/*   Updated: 2026/10/20 19:53:33 by amelbouz         ###   ########.fr       */
+/*   Updated: 2026/10/26 08:28:30 by amelbouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ static int	is_set(char const c, char const *set)
 	}
 	return (0);
 }
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		start;

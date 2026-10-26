@@ -6,7 +6,7 @@
 /*   By: amelbouz <amelbouz@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 16:53:52 by amelbouz          #+#    #+#             */
-/*   Updated: 2026/10/17 08:34:59 by amelbouz         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:52:59 by amelbouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -25,7 +25,7 @@ typedef struct s_list
 
 t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **alst, t_list *new);
-int					ft_lstsize(t_list *lst);
+unsigned int		ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
 void				ft_lstadd_back(t_list **alst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
